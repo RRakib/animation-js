@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body{
+    height: 100vh;
+}
+
+p{
+    margin: 0;
+}
+
+.hi{
+    padding: 20px 25px;
+    background: white;
+    border-radius: 15px;
+    color: #7745ce;
+    margin-bottom: 20px;
+}
+
+#app-69{
+    width: 25%;
+    padding-top: 10.5%;
+    margin: auto;
+    filter: url('#goo');
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+svg{
+    display: none;
+}
+
+.block,
+.block2{
+    position: relative;
+    width: 35vmin;
+    height: 15vmin;
+    color: white;
+    background: #7746ce;
+    border-radius: 50px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vmin;
+    border-radius: 70px;
+}
+.block2{
+    z-index: -1;
+    transform: translateY(-100%);
+}
+.block2.show{
+    transform: translateY(30%);
+    animation: animate ease-out alternate .85s;
+}
+.block2.close{
+    animation: animateClose ease-in alternate .6s;
+}
+#toggle{
+    content: '#f107';
+    position: absolute;
+    top: 48.8%;
+    border: 1px solid #444;
+    left: 45.8%;
+    z-index: 1;
+    background: white;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    outline: none;
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #5a5a5a70;
+}
+#toggle i{
+    transition: 1s;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    left: 27%;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.liquid1,
+.liquid2,
+.liquid3{
+    width: 60px;
+    height: 80px;
+    border-radius: 25px;
+    position: absolute;
+    transition: .5s;
+    bottom: -10px;
+    background: inherit;
+}
+.liquid1{ right: 60px;}
+.liquid2{ left: 25px;}
+.liquid3{ left: 105px; bottom: -25px;}
+
+.Aliquid1,
+.Aliquid2,
+.Aliquid3{
+    width: 60px;
+    transition: .5s;
+    height: 80px;
+    border-radius: 25px;
+    position: absolute;
+    top: -20px;
+    background: inherit;
+}
+.Aliquid1{ right: 60px; top: -30px;}
+.Aliquid2{ left: 25px;}
+.Aliquid3{ left: 105px; top: -10px;}
+
+@keyframes animate{
+    from{transform: translateY(-90%)}
+    to{transform: translateY(30%)}
+}
+@keyframes animateClose{
+    from{transform: translateY(30%)}
+    to{transform: translateY(-100%)}
+}

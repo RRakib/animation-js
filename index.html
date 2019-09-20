@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <svg class="goo-filter" viewBox="0 0 1 1">
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+            <feColorMatrix in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20"
+              result="goo" />
+              <feBlend  in="SourceGraphic" in2="goo" />
+              <feComposite in="SourceGraphic" in2="goo"
+                operator="atop"/>
+          </filter>
+    </svg>
+
+    <button id='toggle'>
+        <i class="fas fa-angle-down"></i>
+    </button>
+
+    <div id='app-69'>
+        <div class='block'>
+          <p class="hi">Hi!</p>
+          <p>Check What's Up</p>
+          <div class="liquid1"></div>
+          <div class="liquid3"></div>
+          <div class='liquid2'></div>
+        </div>
+        <div class='block2' id='block2'>
+            <div class="Aliquid1"></div>
+            <div class="Aliquid3"></div>
+            <div class='Aliquid2'></div>
+        </div>
+    </div>
+
+    <script src="./js.js"></script>
+
+</body>
+</html>
