@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 body{
     height: 100vh;
+    background: #1f1c2e;
 }
 
 p{
@@ -16,11 +17,11 @@ p{
 }
 
 #app-69{
-    width: 25%;
+    width: 23.5%;
     padding-top: 10.5%;
     margin: auto;
     filter: url('#goo');
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -32,10 +33,10 @@ svg{
 .block,
 .block2{
     position: relative;
-    width: 35vmin;
+    width: 33vmin;
     height: 15vmin;
     color: white;
-    background: #7746ce;
+    background: #6745ff;
     border-radius: 50px;
 }
 .block{
@@ -46,22 +47,36 @@ svg{
     height: 30vmin;
     border-radius: 70px;
 }
+.block small,
+.block2 small{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
 .block2{
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-100%);
 }
 .block2.show{
     transform: translateY(30%);
-    animation: animate ease-out alternate .85s;
+    animation: animate ease-out alternate .5s;
 }
 .block2.close{
     animation: animateClose ease-in alternate .6s;
+}
+.textBlock p,
+.textBlock small{
+    animation: textDisplay 1.5s ease-in;
 }
 #toggle{
     content: '#f107';
     position: absolute;
     top: 48.8%;
-    border: 1px solid #444;
+    border: none;
     left: 45.8%;
     z-index: 1;
     background: white;
@@ -71,7 +86,7 @@ svg{
     outline: none;
     transition: .5s;
     border-radius: 10px;
-    box-shadow: 0 0 15px #5a5a5a70;
+    box-shadow: 0 0 10px #00000061;
 }
 #toggle i{
     transition: 1s;
@@ -87,6 +102,7 @@ svg{
 .liquid1,
 .liquid2,
 .liquid3{
+    z-index: -1;
     width: 60px;
     height: 80px;
     border-radius: 25px;
@@ -102,6 +118,7 @@ svg{
 .Aliquid1,
 .Aliquid2,
 .Aliquid3{
+    z-index: -1;
     width: 60px;
     transition: .5s;
     height: 80px;
@@ -121,4 +138,8 @@ svg{
 @keyframes animateClose{
     from{transform: translateY(30%)}
     to{transform: translateY(-100%)}
+}
+@keyframes textDisplay{
+    from{ opacity: 0}
+    to{ opacity: 1;}
 }

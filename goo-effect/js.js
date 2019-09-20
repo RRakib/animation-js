@@ -26,7 +26,10 @@ toggleBtn.addEventListener('click', () => {
             item.style.display = 'block'
         })
         block2.classList.remove('close')
-        block2.classList.add('show')
+        block2.classList.add('show','textBlock')
+        Aliquid.forEach(item => {
+            item.style.top = '-20px'
+        })
         setTimeout(() => {
             console.log('Triggered')
             Aliquid.forEach(item => {
@@ -35,7 +38,7 @@ toggleBtn.addEventListener('click', () => {
             liquid.forEach(item => {
                 item.style.bottom = 0
             })
-        }, 690)
+        }, 390)
     } else{
         toggleBtn.children[0].classList.remove('rotate')
         Aliquid.forEach(item => {
@@ -44,17 +47,14 @@ toggleBtn.addEventListener('click', () => {
         liquid.forEach(item => {
             item.style.display = 'none'
         })
-        Aliquid.forEach(item => {
-            item.style.top = '-20px'
-        })
         liquid.forEach(item => {
-            if(item === Aliquid3){
-                item.style.bottom = '-40px'
+            if(item === liquid3){
+                item.style.bottom = '-20px'
             } else {
                 item.style.bottom = '-5px'
             }
         })
-        block2.classList.remove('show')
+        block2.classList.remove('show','textBlock')
         block2.classList.add('close')
     }
 })
