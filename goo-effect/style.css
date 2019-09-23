@@ -104,16 +104,16 @@ svg{
 .liquid3{
     z-index: -1;
     width: 60px;
-    height: 80px;
+    height: 60px;
     border-radius: 25px;
     position: absolute;
     transition: .5s;
     bottom: -10px;
     background: inherit;
 }
-.liquid1{ right: 60px;}
-.liquid2{ left: 25px;}
-.liquid3{ left: 105px; bottom: -25px;}
+.liquid1{ right: 40px; width: 10px; height: 80px;}
+.liquid2{ left: 20px; transform: rotate(-40deg); width: 30px;}
+.liquid3{ left: 130px; bottom: -25px; height: 100px;}
 
 .Aliquid1,
 .Aliquid2,
@@ -128,7 +128,7 @@ svg{
     background: inherit;
 }
 .Aliquid1{ right: 60px; top: -30px;}
-.Aliquid2{ left: 25px;}
+.Aliquid2{ left: 25px; transform: rotate(-20deg)}
 .Aliquid3{ left: 105px; top: -10px;}
 
 @keyframes animate{

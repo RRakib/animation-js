@@ -1,0 +1,19 @@
+{
+  "name": "gooeffect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./loading-animation/sass/style.scss ./loading-animation/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRakib/animation-js.git"
+  },
+  "author": "Rakib Uddin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RRakib/animation-js/issues"
+  },
+  "homepage": "https://github.com/RRakib/animation-js#readme"
+}
