@@ -15,11 +15,26 @@ body {
   justify-content: center;
   align-items: center; }
 
+#app[data-state="loading"] > .ui-loading {
+  display: flex; }
+
 .ui-loading {
+  background: #fffef3;
   height: 20vmax;
   width: 40vmax;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4); }
+
+.ui-load-square-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center; }
+
+.ui-load-square {
+  width: 1em;
+  height: 1em;
+  margin: 5px;
+  background: black; }
